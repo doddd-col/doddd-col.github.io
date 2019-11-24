@@ -17,7 +17,7 @@
 <meta property="og:description" content="花了两天时间终于把个人博客弄好了，目前是搭建在github，等域名备案好后，再转移吧。有很多博客框架，我选hexo是因为用的人比较多出问题容易google怎么安装网上奶妈级教程就太多了就不重复啰嗦了 记一个超详细的hexo教程因为我之前就安装好git了所以大致流程就是 1安装node.js -&amp;gt; 安装hexo -&amp;gt; github部署  安装好node.js后最好安装cnpm 这是国内的">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;24&#x2F;hexo%E6%90%AD%E5%BB%BA%E4%BB%A5%E5%8F%8A%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E8%B8%A9%E5%9D%91&#x2F;%E5%9B%BE%E7%89%87%E5%90%8D%E5%AD%97.png">
-<meta property="og:updated_time" content="2019-11-24T04:34:46.772Z">
+<meta property="og:updated_time" content="2019-11-24T04:37:55.893Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;24&#x2F;hexo%E6%90%AD%E5%BB%BA%E4%BB%A5%E5%8F%8A%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E8%B8%A9%E5%9D%91&#x2F;%E5%9B%BE%E7%89%87%E5%90%8D%E5%AD%97.png">
   
@@ -218,7 +218,7 @@
 <p>安装好node.js后最好安装cnpm 这是国内的淘宝镜像 速度会比较快</p>
 <figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> install -g cnpm --registry=https:<span class="regexp">//</span>registry.<span class="built_in">npm</span>.taobao.org</span><br></pre></td></tr></table></figure>
 
-
+<a id="more"></a>
 
 <hr>
 <p>记几个命令：</p>
@@ -235,7 +235,7 @@
 <p>在文章插图片也需要安装插件 npm install hexo-asset-image –save<br>还要将_config文件里面的post_asset_folder:这个选项设置为true<br>然后 执行命令hexo n “blog” 就是在/source/_posts目录下有一个同名文件 在里面放要用的图片<br>我试了下自己创建的话 好像不行 反正我是没插进去<br>图片插入格式：<img src="/2019/11/24/hexo%E6%90%AD%E5%BB%BA%E4%BB%A5%E5%8F%8A%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E8%B8%A9%E5%9D%91/%E5%9B%BE%E7%89%87%E5%90%8D%E5%AD%97.png" alt></p>
 <p>还有一个问题没解决 就是点击 ‘所有文章’ 和 ‘关于我’ 都会弹出一个空白页 在_config里面修改 open_in_new: false 也没用   难受</p>
 <hr>
-<h2 id="一些小功能"><a href="#一些小功能" class="headerlink" title="一些小功能"></a>一些小功能</h2><p>截断文章是 <a id="more"></a>  如果文章太长 需要截断就在截断地方加上</p>
+<h2 id="一些小功能"><a href="#一些小功能" class="headerlink" title="一些小功能"></a>一些小功能</h2><p>截断文章是 <!--more-->  如果文章太长 需要截断就在截断地方加上</p>
 <p>给文章添加标签<br>在标题下加上tab: xxx<br>多个标签格式为 [tag1, tag2]<br>注：逗号之后要有一个空格。[tag1, tag2]= [tag1+逗号+空格+tag2]</p>
 <p>要是添加rss(订阅功能) 需要插件npm i hexo-generator-feed</p>
 <hr>
@@ -391,7 +391,7 @@
   <div class="outer">
     <div id="footer-info">
         <div class="footer-left">
-            &copy; 2019 doddd - <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备16022690号</a>
+            &copy; 2019 doddd - <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备号</a>
         </div>
         <div class="footer-right">
             <a href="https://hexo.io/zh-cn/" target="_blank">Evan</a>  Always Love<a href="https://github.com/litten/hexo-theme-yilia" target="_blank"> Vivian</a>
@@ -489,6 +489,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
               </li>
              
@@ -498,10 +502,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">Mybatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>

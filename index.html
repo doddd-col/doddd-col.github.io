@@ -211,25 +211,6 @@
 
 <p>安装好node.js后最好安装cnpm 这是国内的淘宝镜像 速度会比较快</p>
 <figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> install -g cnpm --registry=https:<span class="regexp">//</span>registry.<span class="built_in">npm</span>.taobao.org</span><br></pre></td></tr></table></figure>
-
-
-
-<hr>
-<p>记几个命令：</p>
-  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- npm install -g hexo-cli          	         安装</span><br><span class="line">- hexo init blog                        	  初始化（本地blog文件）</span><br><span class="line">- hexo s = hexo<span class="built_in"> server </span>	    	       启动本地服务</span><br><span class="line">- hexo g = hexo generator      	         生成新的静态文件</span><br><span class="line">- hexo n = hexo new <span class="string">"myfirstblog"</span>     生成一篇新blog</span><br><span class="line">- hexo d = hexo deploy                      将更新的blog部署到服务器</span><br><span class="line">- hexo clean 				      清除之前生成静态文件 (有时候做了一些更新一直不出效果 可能需要用</span><br></pre></td></tr></table></figure>
-
-
-<p>一般部署三连就是 </p>
-<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">hexo</span> <span class="string">clean </span></span><br><span class="line"><span class="attr">hexo</span> <span class="string">g</span></span><br><span class="line"><span class="attr">hexo</span> <span class="string">d</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="踩坑"><a href="#踩坑" class="headerlink" title="踩坑"></a>踩坑</h2><p>git一直执行不了hexo命令，返回报usage<br>后来才发现 很多hexo命令都需要在根目录才能执行 建好blog后 cd blog一下….</p>
-<p>hexo d后 ERROR Deployer not found: git<br>缺少git部署插件 npm install –save hexo-deployer-git</p>
-<p>还有就是修改头像<br>按照网上教程一步一步走还是不行  最后发现 是有两个_config文件:<br>一个是blog根目录里的 一个是themes里面的<br>修改头像再要themes里面的_config修改</p>
-<p>在文章插图片也需要安装插件 npm install hexo-asset-image –save<br>还要将_config文件里面的post_asset_folder:这个选项设置为true<br>然后 执行命令hexo n “blog” 就是在/source/_posts目录下有一个同名文件 在里面放要用的图片<br>我试了下自己创建的话 好像不行 反正我是没插进去<br>图片插入格式：<img src="/2019/11/24/hexo%E6%90%AD%E5%BB%BA%E4%BB%A5%E5%8F%8A%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E8%B8%A9%E5%9D%91/%E5%9B%BE%E7%89%87%E5%90%8D%E5%AD%97.png" alt></p>
-<p>还有一个问题没解决 就是点击 ‘所有文章’ 和 ‘关于我’ 都会弹出一个空白页 在_config里面修改 open_in_new: false 也没用   难受</p>
-<hr>
-<h2 id="一些小功能"><a href="#一些小功能" class="headerlink" title="一些小功能"></a>一些小功能</h2><p>截断文章是</p>
         
       
 	  
@@ -542,7 +523,7 @@
   <div class="outer">
     <div id="footer-info">
         <div class="footer-left">
-            &copy; 2019 doddd - <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备16022690号</a>
+            &copy; 2019 doddd - <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备号</a>
         </div>
         <div class="footer-right">
             <a href="https://hexo.io/zh-cn/" target="_blank">Evan</a>  Always Love<a href="https://github.com/litten/hexo-theme-yilia" target="_blank"> Vivian</a>
@@ -640,6 +621,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">Spring</a>
               </li>
              
@@ -649,10 +634,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">Mybatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
