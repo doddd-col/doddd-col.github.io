@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>jQuey学习笔记 | doddd三亩地</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="jQuery知识点整理因为之前做ssm的CRUD练手时候，需要用到jQuery对前端的搭建，所以特地找视频自学了一下，这是之前根据视频整理的知识点    js不能用结尾要以结尾 $==jQuery $(document).ready(function(){})：初始化函数 当网页中的dom文档结构(div等 不包含关联图片 视频 资源)绘制完成后 立即执行$(document).ready(fun">
+  <meta name="description" content="jQuery知识点整理  因为之前做ssm的CRUD练手时候，需要用到jQuery对前端的搭建，所以特地找视频自学了一下，根据视频整理的知识点  &amp;lt;s….&amp;gt;&amp;lt;&#x2F;s….&amp;gt;    js不能用&amp;lt;s….   &#x2F;&amp;gt;结尾要以&amp;lt;&#x2F;s….t&amp;gt;结尾  $==jQuery ready和onload的不同：  $(document).ready(function(){})">
 <meta name="keywords" content="jQuery">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jQuey学习笔记">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;25&#x2F;jQuey%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;index.html">
 <meta property="og:site_name" content="doddd三亩地">
-<meta property="og:description" content="jQuery知识点整理因为之前做ssm的CRUD练手时候，需要用到jQuery对前端的搭建，所以特地找视频自学了一下，这是之前根据视频整理的知识点    js不能用结尾要以结尾 $==jQuery $(document).ready(function(){})：初始化函数 当网页中的dom文档结构(div等 不包含关联图片 视频 资源)绘制完成后 立即执行$(document).ready(fun">
+<meta property="og:description" content="jQuery知识点整理  因为之前做ssm的CRUD练手时候，需要用到jQuery对前端的搭建，所以特地找视频自学了一下，根据视频整理的知识点  &amp;lt;s….&amp;gt;&amp;lt;&#x2F;s….&amp;gt;    js不能用&amp;lt;s….   &#x2F;&amp;gt;结尾要以&amp;lt;&#x2F;s….t&amp;gt;结尾  $==jQuery ready和onload的不同：  $(document).ready(function(){})">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-25T12:02:10.559Z">
+<meta property="og:updated_time" content="2019-11-25T12:31:44.652Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="doddd三亩地" type="application/atom+xml">
@@ -66,7 +66,7 @@
 		</nav>
 		<!--
 		<nav>
-			总文章数 5
+			总文章数 4
 		</nav>
 		-->
 		<nav class="header-smart-menu">
@@ -210,29 +210,32 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="jQuery知识点整理"><a href="#jQuery知识点整理" class="headerlink" title="jQuery知识点整理"></a>jQuery知识点整理</h1><pre><code>因为之前做ssm的CRUD练手时候，需要用到jQuery对前端的搭建，所以特地找视频自学了一下，这是之前根据视频整理的知识点</code></pre><script></script>    js不能用<script>结尾要以</script>结尾
+        <h1 id="jQuery知识点整理"><a href="#jQuery知识点整理" class="headerlink" title="jQuery知识点整理"></a>jQuery知识点整理</h1><p>  因为之前做ssm的CRUD练手时候，需要用到jQuery对前端的搭建，所以特地找视频自学了一下，根据视频整理的知识点</p>
+<p> <strong>&lt;s….&gt;&lt;/s….&gt;    js不能用&lt;s….   /&gt;结尾要以&lt;/s….t&gt;结尾</strong> </p>
 <p><strong>$==jQuery</strong></p>
-<p>$(document).ready(function(){})：初始化函数 当网页中的dom文档结构(div等 不包含关联图片 视频 资源)绘制完成后 立即执行<br>$(document).ready(function(){})=$(function(){});</p>
-<p>window.onload：当网页中的所有内容（关联图片 视频 资源）全部加载完毕后 立即执行 </p>
+<p><strong>ready和onload的不同：</strong></p>
+<ul>
+<li>$(document).ready(function(){})：初始化函数 当网页中的dom文档结构(div等 不包含关联图片 视频 资源)绘制完成后 立即执行  <strong>$(document).ready(function(){})=$(function(){});</strong></li>
+<li>window.onload：当网页中的所有内容（关联图片 视频 资源）全部加载完毕后 立即执行 </li>
+</ul>
 <p>dom模型：将html xml等文档结构的标签语言 看成dom模型<br>dom节点有三种类型：</p>
 <ul>
-<li>元素节点：<html> | <ul> 等…</ul></html></li>
+<li>元素节点：html | ul 等…</li>
 <li>属性节点：title | src  等…</li>
 <li>文本节点：</li>
 </ul>
 <hr>
-<h2 id="dom对象和jquery对象的转换："><a href="#dom对象和jquery对象的转换：" class="headerlink" title="dom对象和jquery对象的转换："></a>dom对象和jquery对象的转换：</h2><pre><code> title.innerHTML;
-    tile -&gt;$(title)  
+<a id="more"></a>
 
-$(title).html();
-    $(title)-&gt;title</code></pre><blockquote>
+<h2 id="dom对象和jquery对象的转换："><a href="#dom对象和jquery对象的转换：" class="headerlink" title="dom对象和jquery对象的转换："></a>dom对象和jquery对象的转换：</h2><p>相互转换：<br>$(title).html();<br>        $(title)-&gt;title</p>
+<p>title.innerHTML;<br>        tile -&gt;$(title)</p>
+<blockquote>
 <p><em>dom对象-&gt;jquery对象 :</em><br><em>jquery工厂，  $(dom对象)</em></p>
 </blockquote>
 <blockquote>
-<p><em>jquery对象 -&gt;dom对象:</em><br><em>基础：jquery对象默认是一个数组 或集合   ；dom对象默认是一个单独的对象</em></p>
+<p><em>jquery对象 -&gt;dom对象:</em><br><em>基础：jquery对象默认是一个数组 或集合   ；dom对象默认是一个单独的对象</em><br>数组：jquery对象[0]<br>集合：jquery对象.get(0)</p>
 </blockquote>
-<pre><code>数组：jquery对象[0]
-集合：jquery对象.get(0)</code></pre><p><strong>给$()加上[0]自动变成dom对象</strong><br>比如想要表单清空 只有dom对象有这个功能 就需要jQuery选中表单 变成dom对象 再使用.reset()方法清空<br>$(“form”)[0].reset();</p>
+<p>  <strong>给$()加上[0]自动变成dom对象</strong><br>  比如想要表单清空 只有dom对象有这个功能 就需要jQuery选中表单 变成dom对象 再使用.reset()方法清空<br>$(“form”)[0].reset();</p>
 <hr>
 <h2 id="Jquery选择器：jquery根基"><a href="#Jquery选择器：jquery根基" class="headerlink" title="Jquery选择器：jquery根基"></a>Jquery选择器：jquery根基</h2><p><strong>1.基本选择器</strong></p>
 <pre><code>- 标签选择器：
@@ -290,23 +293,30 @@ a.基本过滤选择器（从0开始）
     :lt(index): &lt;index的全部元素
     :not(选择器) :除了...以外
     :header:选中所有的标题元素 h1 h2 &lt;h1&gt;
-    :focus: 获取当前焦点的元素</code></pre><blockquote>
-<p>$(“input:focus”).css(“background-color”,”red”);选中输入输入框时 背景颜色改变</p>
-</blockquote>
-<p><strong>5.可见性选择器：</strong></p>
+    :focus: 获取当前焦点的元素
+     $(&quot;input:focus&quot;).css(&quot;background-color&quot;,&quot;red&quot;);选中输入输入框时 背景颜色改变</code></pre><p><strong>5.可见性选择器：</strong></p>
 <pre><code>:visible ：选中所有可见的元素
 :hidden：选中所有隐藏的元素</code></pre><hr>
-<h2 id="事件-，事件函数（事件方法）"><a href="#事件-，事件函数（事件方法）" class="headerlink" title="事件 ，事件函数（事件方法）"></a>事件 ，事件函数（事件方法）</h2><p><u>js: onXxx</u><br>    <u>onclick();</u><br>    <u>写在<script>内，ready()外；</u></p>
+<h2 id="事件-，事件函数（事件方法）"><a href="#事件-，事件函数（事件方法）" class="headerlink" title="事件 ，事件函数（事件方法）"></a>事件 ，事件函数（事件方法）</h2><p><u>js: onXxx</u><br>    <u>onclick();</u><br>    <u>写在&lt;s…&gt;内，ready()外；</u></p>
 <p><u>jquery:没有on<br>    click();</u><br>    <u>ready()内；</u></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">	$(选择器).事件类型(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		...</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
+<p><strong>1.windows事件：</strong></p>
 <ul>
-<li><p>windows事件：<br>  ready();</p>
-</li>
-<li><p>鼠标事件：<br>  click()：单击事件<br>  mouseover():鼠标悬浮<br>  mouseout():鼠标离开<br>更多事件详看<a href="http://www.w3school.com.cn/tags/html_ref_eventattributes.asp" target="_blank" rel="noopener">W3School</a></p>
-</li>
-<li><p>键盘事件：<br>  keydown():按键 从上往下的 过程<br>  keypress() ： 按键被压到 最底部<br>  keyup()：松开按键</p>
-</li>
+<li>ready();</li>
+</ul>
+<p><strong>2.鼠标事件：</strong></p>
+<ul>
+<li>click()：单击事件</li>
+<li>mouseover():鼠标悬浮</li>
+<li>mouseout():鼠标离开</li>
+<li>更多事件详看<a href="http://www.w3school.com.cn/tags/html_ref_eventattributes.asp" target="_blank" rel="noopener">W3School</a></li>
+</ul>
+<p><strong>3.键盘事件：</strong></p>
+<ul>
+<li>keydown():按键 从上往下的 过程</li>
+<li>keypress() ： 按键被压到 最底部</li>
+<li>keyup()：松开按键</li>
 </ul>
 <blockquote>
 <p>   前端的一些事件、方法，会在某些情况下失效。 2.兼容性问题   可以通过event.keyCode指定具体的按键</p>
@@ -315,35 +325,39 @@ a.基本过滤选择器（从0开始）
 
 
 <p>​    </p>
+<p><strong>4.表单事件</strong></p>
 <ul>
-<li><p>表单事件<br>  focus()：获取焦点<br>  blur()：失去焦点<br>颜色值：可以使用 英语单词 或者   #6位十六进制</p>
-<pre><code>a. #000000:黑色   #ffffff:白色
-b. 如果6位 是两两相同的，则可以写成3位,#aabbcc 可以写成#abc</code></pre></li>
-<li><p>绑定事件与移除事件<br>$(...).click(  function(){ ... });<br>绑定事件<br>  $(...).bind("事件名",[数据],函数);<br>  $(...).bind("click",function(){ ... });</p>
-<p>  $(...).bind("mouseover",function(){ ... });</p>
-<p>  $(...).bind("focus",function(){ ... });</p>
+<li>focus()：获取焦点</li>
+<li>blur()：失去焦点</li>
+<li>颜色值：可以使用 英语单词 或者   #6位十六进制<br>  a. #000000:黑色   #ffffff:白色<br>  b. 如果6位 是两两相同的，则可以写成3位,#aabbcc 可以写成#abc</li>
+</ul>
+<p><strong>5.绑定事件与移除事件</strong><br>   $(…).click(  function(){ … });</p>
+<ul>
+<li><p>绑定事件<br>$(…).bind(“事件名”,[数据],函数);<br>$(…).bind(“click”,function(){ … });</p>
+<p>$(…).bind(“mouseover”,function(){ … });</p>
+<p>$(…).bind(“focus”,function(){ … });</p>
+</li>
+<li><p>批量绑定<br>$(…).bind({ “事件名”:函数   ,  “事件名”:函数 ,…,”事件名”:函数 }) ;</p>
+</li>
+<li><p>移除事件：<br>$(…).unbind(“事件名”);</p>
 </li>
 </ul>
-<pre><code>批量绑定
-$(...).bind({ &quot;事件名&quot;:函数   ,  &quot;事件名&quot;:函数 ,...,&quot;事件名&quot;:函数 }) ;</code></pre><ul>
-<li>移除事件：<pre><code>$(...).unbind(&quot;事件名&quot;);</code></pre></li>
-</ul>
 <ul>
-<li>复合事件：<br>  hover(f1,f2)：切换使用mouseover()和mouseout()</li>
+<li>复合事件：<br>hover(f1,f2)：切换使用mouseover()和mouseout()</li>
 </ul>
-<pre><code>toggle(f1,f2,f3,...,fn):版本问题(jquery1.9以前支持)
-    多个click()事件，toggle()还有其他含义（隐藏与显示）</code></pre><ul>
-<li><p>显示效果（隐藏与显示）<br>  形式：hide([速度],[回调函数]);</p>
-<pre><code>其中速度：可以是数字（毫秒），也可以是 单词（fast normal  slow，注意加双引号）</code></pre><p>  hide();隐藏<br>  show();显示<br>  toggle()：切换隐藏与显示</p>
+<blockquote>
+<p>toggle(f1,f2,f3,…,fn):版本问题(jquery1.9以前支持)<br>    多个click()事件，toggle()还有其他含义（隐藏与显示）</p>
+</blockquote>
+<ul>
+<li><p>显示效果（隐藏与显示）<br>形式：hide([速度],[回调函数]);<br>其中速度：可以是数字（毫秒），也可以是 单词（fast normal  slow，注意加双引号）</p>
+<p>  hide();隐藏<br>  show();显示<br>  toggle()：切换隐藏与显示</p>
 </li>
 </ul>
-<pre><code>淡入淡出（透明度）
-fadeIn():淡入  显示
-fadeOut():淡出 隐藏
-
-控制高度
-slideDown():下拉，显示
-slideUp();上拉  隐藏</code></pre><ul>
+<blockquote>
+<p>淡入淡出（透明度）<br>fadeIn():淡入  显示<br>fadeOut():淡出 隐藏</p>
+<p>控制高度<br>slideDown():下拉，显示<br>slideUp();上拉  隐藏</p>
+</blockquote>
+<ul>
 <li>总结显示问题：<br>  显示：show()  fadeIn()  slideDown();<br>  隐藏：hide()    fadeOut()    slideUp();</li>
 </ul>
 <hr>
@@ -408,20 +422,32 @@ d.获取集合与遍历集合
     后代集合(不推荐使用，影响性能)
      $(...).find( &quot;li&quot;)</code></pre><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>...<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>​    1.同辈集合<br>​        next()：后一个  +<br>​        prev(): 前一个<br>​        siblings()：同辈，左、右</p>
-<p>​    2.前辈<br>​        parent():父代<br>​        parents("ul"):祖先</p>
-<p>​    3.过滤集合：<br>​        i.很多方法的()就是一个过滤选择器<br>​        ii.filter("选择器...");  </p>
-<p>​    4.遍历集合：<br>​        $(...).each(function(index,element){</p>
-<p>​        });</p>
-<p>​        也可以是$.each(...,function(){<br>​        });<br>​        要注意 element是dom对象 要变成jQuery对象才能使用</p>
-<p>​    5.CSS-dom操作:<br>​        height(500) ;<br>​        width(500)</p>
-<p>​        offset()：偏移量（左上角的点）,left top<br>​        offset(function(n,oldOffset){   ... })</p>
-<p>​        offsetParent()：获取  （已定位）的最近的祖先元素<br>​        已定位：元素position属性(默认static)被设置为了relative  absolute  或fixed  </p>
-<p>​        scrollLet()<br>​        scrollTop()</p>
+<p><strong>1.同辈集合</strong></p>
+<ul>
+<li>next()：后一个  +</li>
+<li>prev(): 前一个</li>
+<li>siblings()：同辈，左、右</li>
+</ul>
+<p><strong>2.前辈</strong></p>
+<ul>
+<li>parent():父代</li>
+<li>parents(“ul”):祖先</li>
+</ul>
+<p><strong>3.过滤集合：</strong></p>
+<ul>
+<li>很多方法的()就是一个过滤选择器</li>
+<li>filter(“选择器…”);  </li>
+</ul>
+<p><strong>4.遍历集合：</strong></p>
+<ul>
+<li>$(…).each(function(index,element){});<br>也可以是$.each(…,function(){<br>});</li>
+<li>要注意 element是dom对象 要变成jQuery对象才能使用</li>
+</ul>
+<p><strong>5.CSS-dom操作:</strong><br>height(500) ;<br>width(500)<br>offset()：偏移量（左上角的点）,left top<br>offset(function(n,oldOffset){   … })<br>offsetParent()：获取  （已定位）的最近的祖先元素<br>已定位：元素position属性(默认static)被设置为了relative  absolute  或fixed<br>scrollLet()<br>scrollTop()</p>
 <p><strong>重要：表单校验，可以减轻对服务端的访问次数</strong></p>
 <ul>
 <li>获取要校验的元素值(选择器)    用户名、密码</li>
-<li>通过 字符串处理方法、或者 正则表达式等手段 进行校验  "<a href="mailto:aaa@abc.com" target="_blank" rel="noopener">aaa@abc.com</a>".indexOf("@") !=-1</li>
+<li>通过 字符串处理方法、或者 正则表达式等手段 进行校验  “<a href="mailto:aaa@abc.com" target="_blank" rel="noopener">aaa@abc.com</a>“.indexOf(“@”) !=-1</li>
 <li>触发校验的方法或事件（校验时机）<br>  blur()：失去焦点时触发<br>  change():当里面的值发生改变时<br>  submit()：当点击表单的 “提交submit”按钮时 触发</li>
 </ul>
 <pre><code>onblur=&quot;xxx()&quot;
@@ -434,13 +460,13 @@ if(....不合理的情况) alert() ; return false ;
 if(....不合理的情况) alert() ; return false ;
 if(....不合理的情况) alert() ; return false ;
 
-return true ;</code></pre><p>正则表达式：用于定义规则<br>    email="aaa" ;</p>
-<pre><code>正则表达式.test( email);    </code></pre><p>使用：<br>    手写的正则表达式规则.test(校验的值) -> true|false</p>
+return true ;</code></pre><p>正则表达式：用于定义规则<br>    email=”aaa” ;</p>
+<pre><code>正则表达式.test( email);    </code></pre><p>使用：<br>    手写的正则表达式规则.test(校验的值) -&gt; true|false</p>
 <blockquote>
 <p>正则表达式 误区：有些时候完全没必要使用</p>
 </blockquote>
 <p>var reg=/^\w+@\w+.[a-zA-Z]{2,3}(.[a-zA-Z]{2,3})?$/;</p>
-</script></u></p>
+
       
 	  
 	  
@@ -533,8 +559,8 @@ return true ;</code></pre><p>正则表达式：用于定义规则<br>    email="
 <nav id="article-nav">
   
   
-    <a href="/2019/11/25/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Linux学习笔记(一)--命令行整理</div>
+    <a href="/2019/11/24/hexo%E6%90%AD%E5%BB%BA%E4%BB%A5%E5%8F%8A%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E8%B8%A9%E5%9D%91/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo搭建以及插件安装踩坑</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -561,7 +587,7 @@ return true ;</code></pre><p>正则表达式：用于定义规则<br>    email="
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery知识点整理"><span class="toc-number">1.</span> <span class="toc-text">jQuery知识点整理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#dom对象和jquery对象的转换："><span class="toc-number">1.1.</span> <span class="toc-text">dom对象和jquery对象的转换：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jquery选择器：jquery根基"><span class="toc-number">1.2.</span> <span class="toc-text">Jquery选择器：jquery根基</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#事件-，事件函数（事件方法）"><span class="toc-number">1.3.</span> <span class="toc-text">事件 ，事件函数（事件方法）</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery知识点整理"><span class="toc-number">1.</span> <span class="toc-text">jQuery知识点整理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#dom对象和jquery对象的转换："><span class="toc-number">1.1.</span> <span class="toc-text">dom对象和jquery对象的转换：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jquery选择器：jquery根基"><span class="toc-number">1.2.</span> <span class="toc-text">Jquery选择器：jquery根基</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#事件-，事件函数（事件方法）"><span class="toc-number">1.3.</span> <span class="toc-text">事件 ，事件函数（事件方法）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#操作DOM"><span class="toc-number">1.4.</span> <span class="toc-text">操作DOM</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -689,11 +715,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jQuery</a>
               </li>
              
               <li class="article-tag-list-item">
