@@ -8,24 +8,24 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Linux学习笔记(二)命令行整理 | 三亩地</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第二波时间日期类date指令  显示当前时间基本语法：获取日期date 当前完整日期date +%Y     “查看年份”date +%m     “查看月份”date +%d     “查看几号”date “+%Y-%m-%d %H:%M:%S”  “按格式输出日期 (因为有空格需要加引号)”   hwclock命令 (即hardwareclock系统硬件时间)    hwclock    hw">
+  <meta name="description" content="第二波时间日期类date指令  显示当前时间基本语法：获取日期date 当前完整日期date +%Y     “查看年份”date +%m     “查看月份”date +%d     “查看几号”date “+%Y-%m-%d %H:%M:%S”  “按格式输出日期 (因为有空格需要加引号)”">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux学习笔记(二)命令行整理">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;index.html">
 <meta property="og:site_name" content="三亩地">
-<meta property="og:description" content="第二波时间日期类date指令  显示当前时间基本语法：获取日期date 当前完整日期date +%Y     “查看年份”date +%m     “查看月份”date +%d     “查看几号”date “+%Y-%m-%d %H:%M:%S”  “按格式输出日期 (因为有空格需要加引号)”   hwclock命令 (即hardwareclock系统硬件时间)    hwclock    hw">
+<meta property="og:description" content="第二波时间日期类date指令  显示当前时间基本语法：获取日期date 当前完整日期date +%Y     “查看年份”date +%m     “查看月份”date +%d     “查看几号”date “+%Y-%m-%d %H:%M:%S”  “按格式输出日期 (因为有空格需要加引号)”">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;F:%5Cdoddd-col.github.io%5Csource_posts%5CLinux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86%5Clocate%E6%9F%A5%E6%89%BE.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;locate%E6%9F%A5%E6%89%BE.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;tarerror.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;chown%E4%B8%8D%E8%83%BD%E4%BF%AE%E6%94%B9%E9%AB%98%E6%9D%83%E9%99%90%E7%9A%84%E7%94%A8%E6%88%B7.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;%E7%9B%AE%E5%BD%95%E6%9D%83%E9%99%90.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%89%80%E6%9C%89%E8%80%85.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%89%80%E6%9C%89%E7%BB%84.png">
-<meta property="og:updated_time" content="2019-11-27T01:59:33.976Z">
+<meta property="og:updated_time" content="2019-11-27T02:09:12.524Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;F:%5Cdoddd-col.github.io%5Csource_posts%5CLinux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86%5Clocate%E6%9F%A5%E6%89%BE.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;locate%E6%9F%A5%E6%89%BE.png">
   
     <link rel="alternative" href="/atom.xml" title="三亩地" type="application/atom+xml">
   
@@ -222,6 +222,7 @@
 <blockquote>
 <p>显示当前时间<br>基本语法：<br>获取日期<br>date 当前完整日期<br>date +%Y     “查看年份”<br>date +%m     “查看月份”<br>date +%d     “查看几号”<br>date “+%Y-%m-%d %H:%M:%S”  “按格式输出日期 (因为有空格需要加引号)”</p>
 </blockquote>
+<a id="more"></a>
 <blockquote>
 <p>hwclock命令 (即hardwareclock系统硬件时间)<br>    hwclock<br>    hwclock -w     “将系统时间写入到系统硬件当中”</p>
 </blockquote>
@@ -243,7 +244,7 @@
 <blockquote>
 <p>快速定位文件路径<br><strong>因为是基于数据库的快速搜索 所以第一次使用需要先用updatedb创建locate数据库</strong><br>基本语法：<br>locate 文件名</p>
 </blockquote>
-<p>不执行updatedb:<br><img src="/2019/11/26/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86/F:%5Cdoddd-col.github.io%5Csource_posts%5CLinux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86%5Clocate%E6%9F%A5%E6%89%BE.png" alt></p>
+<p>不执行updatedb:<br><img src="/2019/11/26/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86/locate%E6%9F%A5%E6%89%BE.png" alt></p>
 <p><strong>grep指令和管道符号(|)</strong></p>
 <blockquote>
 <p>grep过滤查找.<br>“|”，表示将前一个指令输出的结果交给后面的指令处理，将两个指令连接起来<br>基本语法：<br>gerp [选项] 查询内容 源文件<br>-n 显示行号<br>-i  忽略字母大小写</p>
@@ -282,11 +283,11 @@
 <blockquote>
 <p>指令：chown 修改的用户名 文件名<br>只有权限高于该文件所有者才能修改<br>chown tom aa.txt</p>
 </blockquote>
+<p>权限不足：<br><img src="/2019/11/26/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86/chown%E4%B8%8D%E8%83%BD%E4%BF%AE%E6%94%B9%E9%AB%98%E6%9D%83%E9%99%90%E7%9A%84%E7%94%A8%E6%88%B7.png" alt></p>
 <p><strong>修改文件所在组</strong></p>
 <blockquote>
 <p>指令：chgrp 修改的组名 文件名<br>只有权限高于该文件所有者才能修改<br>chgrp shaolin ap.zip</p>
 </blockquote>
-<p>权限不足：<br><img src="/2019/11/26/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86/chown%E4%B8%8D%E8%83%BD%E4%BF%AE%E6%94%B9%E9%AB%98%E6%9D%83%E9%99%90%E7%9A%84%E7%94%A8%E6%88%B7.png" alt></p>
 <p><strong>改变用户所在组</strong></p>
 <blockquote>
 <p>指令：usermod -g 修改的组名 用户名<br>usermod -g bandit tom<br>user -d 目录名 用户名 “改变该用户登录的初始目录”</p>
@@ -296,15 +297,15 @@
 <blockquote>
 <p>[-]     普通文件<br>[d]     目录<br>[l]     链接<br>[c]     字符设备(键盘，鼠标)<br>[b]     块文件(硬盘)</p>
 </blockquote>
-<p>(rw-)二到四位是所有者权限：</p>
+<p>(r w -)二到四位是所有者权限：</p>
 <blockquote>
-<p>[r]     可读<br>[w]     可写<br>[x]     可执行<br>[-]     代表该位置的权限</p>
+<p>[r]     可读<br>[w]     可写<br>[x]     可执行<br>[-]     代表没有该权限</p>
 </blockquote>
-<p>(r–)五到七位是文件所在组的用户权限(与文件所有者在相同组的用户的权限)</p>
+<p>(r - -)五到七位是文件所在组的用户权限(与文件所有者在相同组的用户的权限)</p>
 <blockquote>
-<p>同上<br>r– 代表只有写的权限</p>
+<p>同上<br>r - - 代表只有写的权限</p>
 </blockquote>
-<p>(r–)八到十位是文件其他组的用户权限(与文件所有者不在相同组的用户的权限)</p>
+<p>(r - -)八到十位是文件其他组的用户权限(与文件所有者不在相同组的用户的权限)</p>
 <blockquote>
 <p>同上</p>
 </blockquote>
@@ -319,7 +320,7 @@
 <p>通过chmod指令，可以修改文件或目录的权限<br>第一种方式：“+，-，=”变更权限<br>u:所有者 g:所有组 o:其他人 a:所有人（u+g+o）<br>chmod u=rwx，g=rx，o=x 文件/目录名<br>chmod o+w 文件/目录名<br>chmod a-x 文件/目录名</p>
 </blockquote>
 <blockquote>
-<p>第二种方式：通过数字变更权限<br>chmod u=rwx，g=rx，o=x 文件/目录名<br>相当于chmod 751</p>
+<p>第二种方式：通过数字变更权限<br>chmod u=rwx，g=rx，o=x 文件/目录名<br>相当于chmod 751 文件/目录名</p>
 </blockquote>
 <p><strong>修改权限所有者：</strong></p>
 <blockquote>
@@ -586,11 +587,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jQuery</a>
               </li>
              
               <li class="article-tag-list-item">
