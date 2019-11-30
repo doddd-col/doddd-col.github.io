@@ -6,12 +6,12 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Linux学习笔记(二)命令行整理 | 三亩地</title>
+  <title>Linux学习笔记(二)--命令行整理 | 三亩地</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="第二波时间日期类date指令  显示当前时间基本语法：获取日期date 当前完整日期date +%Y     “查看年份”date +%m     “查看月份”date +%d     “查看几号”date “+%Y-%m-%d %H:%M:%S”  “按格式输出日期 (因为有空格需要加引号)”">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux学习笔记(二)命令行整理">
+<meta property="og:title" content="Linux学习笔记(二)--命令行整理">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;index.html">
 <meta property="og:site_name" content="三亩地">
 <meta property="og:description" content="第二波时间日期类date指令  显示当前时间基本语法：获取日期date 当前完整日期date +%Y     “查看年份”date +%m     “查看月份”date +%d     “查看几号”date “+%Y-%m-%d %H:%M:%S”  “按格式输出日期 (因为有空格需要加引号)”">
@@ -23,7 +23,7 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%89%80%E6%9C%89%E8%80%85.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%89%80%E6%9C%89%E7%BB%84.png">
-<meta property="og:updated_time" content="2019-11-27T02:09:12.524Z">
+<meta property="og:updated_time" content="2019-11-30T11:18:50.988Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%95%B4%E7%90%86&#x2F;locate%E6%9F%A5%E6%89%BE.png">
   
@@ -74,7 +74,7 @@
 		</nav>
 		<!--
 		<nav>
-			总文章数 8
+			总文章数 9
 		</nav>
 		-->
 		<nav class="header-smart-menu">
@@ -171,7 +171,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Linux学习笔记(二)命令行整理
+      Linux学习笔记(二)--命令行整理
     </h1>
   
 
@@ -256,7 +256,7 @@
 <blockquote>
 <p>gzip用于压缩文件，gunzip用于解压文件<br>基本语法：<br>gzip 文件名 压缩文件 “只能将文件压缩为*.gz文件 “ (不会保留源文件 只保留压缩文件hello.txt.gz)<br>gunzip 文件.gz “解压文件” (不保留压缩文件 只保留解压出来的源文件hello.txt)</p>
 </blockquote>
-<p><strong>zip/unzip指令</strong>(用的比较多)</p>
+<p><strong>zip/unzip指令</strong></p>
 <blockquote>
 <p>zip用于压缩文件，unzip用于解压文件<br>基本语法：<br>zip [选项]xxx.zip 压缩的内容 (zip -r mypackage.zip /home/)<br>unzip [选项]xxx.zip    (unzip -d /opt/tmp/ mypackage)<br>zip常用选项<br>-r 递归压缩，压缩目录<br>unzip常用选项<br>-d 目录 指定解压后文件的存放目录</p>
 </blockquote>
@@ -430,7 +430,7 @@
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Linux学习笔记(三)命令行整理
+          Linux学习笔记(三)--命令行整理
         
       </div>
     </a>
@@ -596,7 +596,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">Shell</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -604,7 +608,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
