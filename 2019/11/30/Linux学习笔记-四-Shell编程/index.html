@@ -43,7 +43,7 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;30&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9B%9B-Shell%E7%BC%96%E7%A8%8B&#x2F;%E5%87%BD%E6%95%B0%E6%88%90%E5%8A%9F.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;30&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9B%9B-Shell%E7%BC%96%E7%A8%8B&#x2F;%E5%87%BD%E6%95%B02.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;30&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9B%9B-Shell%E7%BC%96%E7%A8%8B&#x2F;%E5%87%BD%E6%95%B02%E8%BE%93%E5%87%BA.png">
-<meta property="og:updated_time" content="2019-12-01T12:29:29.004Z">
+<meta property="og:updated_time" content="2019-12-03T05:37:17.735Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;30&#x2F;Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9B%9B-Shell%E7%BC%96%E7%A8%8B&#x2F;shell_helloworld.png">
   
@@ -384,10 +384,10 @@
 
 <p><strong>变量判空方法</strong></p>
 <blockquote>
-<p>&nbsp;&nbsp; &nbsp;&nbsp; 直接通过变量判断<br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; num=<br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; if [ ! $num1 ]<br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  then<br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; return 1<br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; fi</p>
+<p>&nbsp;&nbsp; &nbsp;&nbsp; 直接通过变量判断<br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; num1=<br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; if [ ! $num1 ]<br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  then<br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; return 1<br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; fi</p>
 </blockquote>
 <blockquote>
-<p>&nbsp;&nbsp; &nbsp;&nbsp; 通过加” “引号判断<br>&nbsp;&nbsp; &nbsp;&nbsp; num=<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; if [ ! -n “$num1” ]<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  then<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; return 1<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; fi</p>
+<p>&nbsp;&nbsp; &nbsp;&nbsp; 通过加” “引号判断<br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;num=<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; if [ ! -n “$num1” ]<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  then<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; return 1<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; fi</p>
 </blockquote>
 <p><strong>实例</strong><br>函数1<br><img src="/2019/11/30/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9B%9B-Shell%E7%BC%96%E7%A8%8B/%E5%87%BD%E6%95%B0.png" alt><br>第一个参数为空（返回值1）：<br><img src="/2019/11/30/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9B%9B-Shell%E7%BC%96%E7%A8%8B/%E5%8F%82%E6%95%B01%E4%B8%BA%E7%A9%BA.png" alt><br>第二个参数为空（返回值2）：<br><img src="/2019/11/30/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9B%9B-Shell%E7%BC%96%E7%A8%8B/%E5%8F%82%E6%95%B02%E4%B8%BA%E7%A9%BA.png" alt><br>成功：<br><img src="/2019/11/30/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9B%9B-Shell%E7%BC%96%E7%A8%8B/%E5%87%BD%E6%95%B0%E6%88%90%E5%8A%9F.png" alt></p>
 <p>函数2<br><img src="/2019/11/30/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9B%9B-Shell%E7%BC%96%E7%A8%8B/%E5%87%BD%E6%95%B02.png" alt><br>结果：<br><img src="/2019/11/30/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9B%9B-Shell%E7%BC%96%E7%A8%8B/%E5%87%BD%E6%95%B02%E8%BE%93%E5%87%BA.png" alt></p>
@@ -550,7 +550,7 @@
   <div class="outer">
     <div id="footer-info">
         <div class="footer-left">
-            &copy; 2019 doddd - <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备号</a>
+            &copy; 2019 doddd - <a href="http://www.beian.miit.gov.cn/" target="_blank">辽ICP备19019980号</a>
         </div>
         <div class="footer-right">
             <a href="https://hexo.io/zh-cn/" target="_blank">Evan</a>  Always Love<a href="https://github.com/litten/hexo-theme-yilia" target="_blank"> Vivian</a>
@@ -652,19 +652,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">jQuery</a>
               </li>
              
               <li class="article-tag-list-item">
